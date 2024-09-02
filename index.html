@@ -5,33 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laser Services</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Include some basic styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="file"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Our Laser Services</h1>
         <p>Your trusted partner in precision laser cutting and engraving.</p>
     </header>
+    
     <section>
         <h2>Contact Us</h2>
-        <form id="contact-form" action="https://formspree.io/f/mvgpyozd" method="POST" enctype="multipart/form-data">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
+        <form action="https://formspree.io/f/mvgpyozd" method="POST" enctype="multipart/form-data">
+            <label for="email">Your email:</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <label for="file">Upload File:</label>
-            <input type="file" id="file" name="file">
-
-            <button type="submit">Send Message</button>
+            
+            <label for="file">Your file:</label>
+            <input type="file" id="file" name="upload" required>
+            
+            <button type="submit">Send</button>
         </form>
     </section>
+    
     <footer>
         <p>&copy; 2024 Laser Services. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Optional: Add your JavaScript file -->
 </body>
 </html>
