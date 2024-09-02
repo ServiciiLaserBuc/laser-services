@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laser Services</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +16,15 @@
             margin-bottom: 20px;
         }
 
-        section {
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        form {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
@@ -32,7 +39,7 @@
             font-weight: bold;
         }
 
-        input[type="text"], input[type="email"], input[type="file"], textarea {
+        input[type="email"], textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
@@ -54,34 +61,19 @@
         button:hover {
             background-color: #0056b3;
         }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #666;
-        }
-
-        .content-section {
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f4f4f4;
-        }
     </style>
 </head>
 <body>
     <header>
-       <h1 style="text-align: center;">Bine ati venit la Servicii Laser Bucuresti</h1>
-        
-<p style="text-align: center;">Taiam si gravam pe aur, argint, cupru, alama, bronz</p>
-<p style="text-align: center;">Pentru detalii si preturi va rugam sa ne contactati</p>
-<p style="text-align: center;">Va rugam atasati fisierul printr-un link wetransfer</p>
-
+        <h1>Laser Services</h1>
+        <p>Taiam si gravam pe aur, argint, cupru, alama, bronz</p>
+        <p>Pentru detalii si preturi va rugam sa ne contactati</p>
+        <p>Va rugam atasati fisierul cu modelul printr-un link wetransfer</p>
+    </header>
 
     <section>
         <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/mvgpyozd" method="POST" enctype="multipart/form-data">
+        <form action="https://formspree.io/f/mvgpyozd" method="POST">
             <label>
                 Your email:
                 <input type="email" name="email" required>
@@ -95,9 +87,5 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    
-    <footer>
-        <p>&copy; 2024 Laser Services. All rights reserved.</p>
-    </footer>
 </body>
 </html>
