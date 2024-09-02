@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laser Services</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Optional: Include some basic styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -71,30 +70,50 @@
     
     <section>
         <h2>Contact Us</h2>
-        <!-- Updated Form Structure -->
-        <form action="https://formspree.io/f/mvgpyozd" method="POST" enctype="multipart/form-data">
-             <label>
-    Your text:
-    <textarea name="message" rows="4" required></textarea>
-  </label>
-  
-  <label>
-    Your email:
-    <input type="email" name="email" required>
-  </label>
-            
-    <label>
-        Your file:
-    <input type="file" name="upload">
-  </label>
-            
-  <button type="submit">Send</button>
-</form>
+        <form id="contact-form">
+            <label>
+                Your email:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Your message:
+                <textarea name="message" rows="4" required></textarea>
+            </label>
+
+            <label>
+                Your file:
+                <input type="file" name="file" id="file-upload">
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
     </section>
     
     <footer>
         <p>&copy; 2024 Laser Services. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script> <!-- Optional: Add your JavaScript file -->
+
+    <!-- Include EmailJS script and setup -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("QHWXSTqpt8ZSFZz-v"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+        })();
+        
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Use EmailJS to send the form data
+            emailjs.sendForm('service_rfr4iv8', 'service_rfr4iv8', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your message has been sent successfully!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('There was an error sending your message. Please try again.');
+                });
+        });
+    </script>
 </body>
 </html>
