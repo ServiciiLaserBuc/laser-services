@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laser Services</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Optional: Include some basic styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,6 +60,14 @@
             margin-top: 20px;
             color: #666;
         }
+
+        .content-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
     </style>
 </head>
 <body>
@@ -69,20 +76,24 @@
         <p>Your trusted partner in precision laser cutting and engraving.</p>
     </header>
     
+    <section class="content-section">
+        <h2>About Us</h2>
+        <p>Va rugam atasati fisierul printr-un link wetransfer..</p>
+    </section>
+
     <section>
         <h2>Contact Us</h2>
-        <!-- Updated Form Structure -->
         <form action="https://formspree.io/f/mvgpyozd" method="POST" enctype="multipart/form-data">
             <label>
                 Your email:
                 <input type="email" name="email" required>
             </label>
-            
+
             <label>
-                Your file:
-                <input type="file" name="upload">
+                Your message:
+                <textarea name="message" rows="4" required></textarea>
             </label>
-            
+
             <button type="submit">Send</button>
         </form>
     </section>
@@ -90,6 +101,5 @@
     <footer>
         <p>&copy; 2024 Laser Services. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script> <!-- Optional: Add your JavaScript file -->
 </body>
 </html>
