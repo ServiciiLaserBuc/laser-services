@@ -71,19 +71,18 @@
     
     <section>
         <h2>Contact Us</h2>
-       <form
-  action="https://formspree.io/f/mvgpyozd"
-  method="POST"
-  enctype="multipart/form-data"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
+        <!-- Updated Form Structure -->
+        <form action="https://formspree.io/f/mvgpyozd" method="POST" enctype="multipart/form-data">
+             <label>
+    Your message:
+    <textarea name="message" rows="4" required></textarea>
   </label>
+  
   <label>
     Your file:
     <input type="file" name="upload">
   </label>
+  
   <button type="submit">Send</button>
 </form>
     </section>
