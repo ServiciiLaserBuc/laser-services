@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laser Services</title>
     <style>
-        /* Basic styles for the page */
+        /* Your existing styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -35,20 +35,22 @@
             background-color: #4682B4;
         }
 
-        .button-bar button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+        .button-bar a {
+            text-decoration: none;
             color: white;
             background-color: #5F9EDC;
+            padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 1em;
+            display: inline-block;
+            text-align: center;
         }
 
         .carousel-container {
             position: relative;
-            width: 550%;
-            max-width: 500px;
+            width: 80%;
+            max-width: 800px;
             margin: 20px auto;
             overflow: hidden;
             background-color: #fff;
@@ -67,8 +69,8 @@
         }
 
         .carousel-slide img {
-            width: 100%; /* Adjusts the image to fit the container */
-            height: auto; /* Maintains the aspect ratio */
+            width: 100%;
+            height: auto;
         }
 
         .carousel-buttons {
@@ -139,14 +141,14 @@
     </header>
 
     <div class="button-bar">
-        <button>Contact</button>
-        <button>Pictures</button>
+        <a href="contact.html">Contact</a>
+        <a href="pictures.html">Pictures</a>
     </div>
 
     <div class="carousel-container">
         <div class="carousel-slides">
             <div class="carousel-slide">
-                <img src="https://raw.githubusercontent.com/ServiciiLaserBuc/laser-services/main/medalie%20laser.png" alt="Slide 1">
+                <img src="https://raw.githubusercontent.com/ServiciiLaserBuc/laser-services/main/laser%20medalie.mp4" alt="Slide 1">
             </div>
             <div class="carousel-slide">
                 <img src="https://raw.githubusercontent.com/ServiciiLaserBuc/laser-services/main/disc%20carbon%20laser.jpeg" alt="Slide 2">
@@ -160,8 +162,7 @@
             <button id="next">&gt;</button>
         </div>
     </div>
-
-    <div class="text-section">
+<div class="text-section">
         <p>Your text goes here. You can describe your services or provide other relevant information.</p>
     </div>
 
@@ -198,3 +199,4 @@
     </script>
 </body>
 </html>
+   
