@@ -3,100 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laser Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #f7dada; /* Light Alice Blue background */
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        p {
-            margin: 10px 0;
-        }
-
-        section {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #e6f7ff; /* Light Blue background */
-        }
-
-        h2 {
-            text-align: center;
-            color: #333; /* Dark text color for contrast */
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        button {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servicii Laser București</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Servicii Laser in Bucuresti</h1>
-        <p>Taiam si gravam aur, argint, cupru, alama, bronz</p>
-        <p>Dispunem de un laser de 100W si o echipa cu o experienta de peste 25 de ani</p>
-        <p>Putem lucra comenzi atat corporate cat si individuale/serii mici/personalizari</p>
-        <p>Contra cost putem creea grafica dupa model poza/desen</p>
-        <p>Pentru detalii si preturi va rugam sa ne contactati</p>
-        <p>Va rugam atasati fisierul printr-un link wetransfer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/mvgpyozd" method="POST">
-            <label>
-                Your email:
-                <input type="email" name="email" required>
-            </label>
+    <section id="home">
+        <h1>Servicii Laser în București</h1>
+        <p>Tăiam și gravăm aur, argint, cupru, alamă, bronz</p>
+        <p>Dispunem de un laser de 100W și o echipă cu o experiență de peste 25 de ani</p>
+        <p>Putem lucra comenzi atât corporate cât și individuale/serii mici/personalizări</p>
+        <p>Contra cost putem creea grafică după model poză/desen</p>
+        <p>Pentru detalii și prețuri vă rugăm să ne contactați</p>
+        <p>Vă rugăm atașați fișierul printr-un link WeTransfer</p>
+    </section>
 
-            <label>
-                Your message:
-                <textarea name="message" rows="4" required></textarea>
-            </label>
+    <section id="pictures">
+        <h2>Galerie de Imagini</h2>
+        <p>Imaginile serviciilor noastre vor fi încărcate curând.</p>
+        <!-- You can later add an image gallery here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contactați-ne</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
             <button type="submit">Send</button>
         </form>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Servicii Laser București</p>
+    </footer>
 </body>
 </html>
