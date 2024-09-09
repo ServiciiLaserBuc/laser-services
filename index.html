@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +14,7 @@
         header {
             text-align: center;
             margin-bottom: 20px;
-            background-color: #f7dada; /* Light Alice Blue background */
+            background-color: #f0f8ff; /* Light Alice Blue background */
             padding: 20px;
             border-radius: 5px;
         }
@@ -68,22 +70,30 @@
             background-color: #0056b3;
         }
     </style>
-     <h1>Servicii Laser in Bucuresti</h1>
-        <p>Taiam si gravam aur, argint, cupru, alama, bronz</p>
-        <p>Dispunem de un laser de 100W si o echipa cu o experienta de peste 25 de ani</p>
-        <p>Putem lucra comenzi atat corporate cat si individuale/serii mici/personalizari</p>
-        <p>Contra cost putem creea grafica dupa model poza/desen</p>
+</head>
+<body>
+    <header>
+        <h1>Laser Services</h1>
+        <p>Taiam si gravam pe aur, argint, cupru, alama, bronz</p>
         <p>Pentru detalii si preturi va rugam sa ne contactati</p>
         <p>Va rugam atasati fisierul printr-un link wetransfer</p>
-        <section>
+    </header>
+
+    <section>
         <h2>Contact Us</h2>
         <form action="https://formspree.io/f/mvgpyozd" method="POST">
             <label>
                 Your email:
                 <input type="email" name="email" required>
             </label>
+
+            <label>
+                Your message:
+                <textarea name="message" rows="4" required></textarea>
+            </label>
+
             <button type="submit">Send</button>
         </form>
     </section>
-    </body>
+</body>
 </html>
