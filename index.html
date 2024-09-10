@@ -51,6 +51,7 @@
             position: relative;
             width: 80%;
             max-width: 800px;
+            max-height: 500px;
             margin: 20px auto;
             overflow: hidden;
             background-color: #fff;
@@ -66,12 +67,13 @@
         .carousel-slide {
             min-width: 100%;
             box-sizing: border-box;
+            overflow: hidden; /* Crops overflowed content */
         }
 
         .carousel-slide img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+            width: 100%; /* Adjusts the image to fit the container */
+            height: auto; /* Maintains the aspect ratio */
+            object-fit: cover; /* Ensures images cover the container */
         }
 
         .carousel-buttons {
@@ -89,6 +91,10 @@
             color: white;
             padding: 10px;
             cursor: pointer;
+        }
+
+        .carousel-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         .text-section {
@@ -127,9 +133,10 @@
             <button id="next">&gt;</button>
         </div>
     </div>
-<div class="text-section">
+
+    <div class="text-section">
         <p>Taiam si gravam pe aur, argint, cupru, alama, bronz, otel, nichel</p>
-</div>
+    </div>
 
     <script>
         // JavaScript for carousel functionality
@@ -151,4 +158,3 @@
     </script>
 </body>
 </html>
-   
