@@ -40,7 +40,10 @@
             text-align: center;
         }
         .gallery {
-            display: flex;
+              display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* Space between the images */
+            padding: 20px;
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
